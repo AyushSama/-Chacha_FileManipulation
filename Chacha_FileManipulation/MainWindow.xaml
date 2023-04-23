@@ -1,0 +1,25 @@
+﻿<Window x:Class="Chacha_FileManipulation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chacha_FileManipulation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="700">
+    <Grid>
+        <Label Content="Input File Path:" HorizontalAlignment="Left" Margin="48,45,0,0" VerticalAlignment="Top" Width="92"/>
+        <Button Content="Browse File" HorizontalAlignment="Left" Margin="136,45,0,0" VerticalAlignment="Top" Click="OpenFile" Width="104" Height="27" RenderTransformOrigin="0.492,0.14"/>
+
+        <Label Content="Output Destination Path:" HorizontalAlignment="Left" Margin="48,109,0,0" VerticalAlignment="Top" Width="140"/>
+        <RichTextBox x:Name="rtbOutput" Margin="188,109,212,273">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button Content="Make Files" HorizontalAlignment="Left" Margin="176,179,0,0" VerticalAlignment="Top" Width="162" Click="Button_Click" Height="38"/>
+        <TextBlock x:Name="SelectedFile" HorizontalAlignment="Left" Margin="245,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" Height="70"/>
+
+    </Grid>
+</Window>
